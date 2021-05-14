@@ -180,7 +180,7 @@ def get_args():
     parser.add_argument('--lr', default=0.4)
     parser.add_argument('--batch_size', default=32)
     parser.add_argument('--vis', type=eval, choices=[True, False], default=True)
-    parser.add_argument("--save_path", type=str, default="./mvtec_result")
+    parser.add_argument("--save_path", type=str, default="./mvtec_results")
     args = parser.parse_args()
 
     return args
@@ -195,8 +195,8 @@ if __name__ == '__main__':
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     args.device = device
 
-    args.model_dir = args.save_path + '/model' + '/' + args.obj
-    args.img_dir = args.save_path + '/img' + '/' + args.obj
+    args.model_dir = args.save_path + '/models' + '/' + args.obj
+    args.img_dir = args.save_path + '/imgs' + '/' + args.obj
     os.makedirs(args.model_dir, exist_ok=True)
     os.makedirs(args.img_dir, exist_ok=True)
 
