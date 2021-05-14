@@ -34,7 +34,7 @@ python main.py --phase 'train or test' --dataset_path 'D:/dataset/mvtec_anomaly_
 | toothbrush | 0.989 |0.978(1) | - |  0.989(1)|
 | transistor | 0.825 |0.921(1) | - | 0.978(1) |
 | zipper | 0.985 | 0.969(1)| - | 0.899(1) |
-| mean | 0.970 | 0.960(1) | 0.955 | 0.95(1) |
+| mean | 0.970 | 0.960(1) | 0.955 | 0.948(1) |
 
 ### Visualization examples
 ![](imgs/cable.png)
