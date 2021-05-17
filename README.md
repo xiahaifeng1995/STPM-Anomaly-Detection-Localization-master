@@ -1,4 +1,4 @@
-## STPM-master
+## STPM-Anomaly-Detection-Localization-master
 This is an implementation of the paper [Student-Teacher Feature Pyramid Matching for
 Unsupervised Anomaly Detection](https://arxiv.org/abs/2103.04257v2). 
 
