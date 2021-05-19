@@ -91,7 +91,7 @@ class STPM():
     def val(self, epoch):
         self.model_s.eval()
         losses = AverageMeter()
-        for (data, _, _) in tqdm(self.train_loader):
+        for (data, _, _) in tqdm(self.val_loader):
             data = data.to(self.device)
             with torch.set_grad_enabled(False):
                 features_t = self.model_t(data)
